@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "$"
-var adminprefix = '$'
+var prefix = "a"
+var adminprefix = 'a'
 
 
 
 
-  var prefix = "$";
+  var prefix = "a";
 
   client.on("message", message => {
   
@@ -23,7 +23,7 @@ var adminprefix = '$'
   });
 
 client.on('message', message => {
-    if (message.content.startsWith("$avatar")) {
+    if (message.content.startsWith("aavatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -48,12 +48,9 @@ client.on('ready',  () => {
   });
 
 
-  client.on('message', msg => {
-    if(msg.content === '$inv')
-    msg.reply('**Link Bot. https://discordapp.com/oauth2/authorize?client_id=623152020093927424&permissions=2080374975&scope=bot **')
-  });
+ 
 
-var prefix = "$";  
+var prefix = "a";  
 client.on('message', message => {
   if(message.content === prefix + "help"){
     var code = client.emojis.find(emoji => emoji.name === "code" )
@@ -80,7 +77,7 @@ client.on('message', message => {
 
  //=================================================================================
 client.on('message', message => {
-var prefix = "$";
+var prefix = "a";
        if(message.content === prefix + "mc") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
@@ -107,7 +104,7 @@ var prefix = "$";
        
 });
 
-var prefix = "$";
+var prefix = "a";
 client.on('message',async message => {
   if (message.content.startsWith(prefix+"bot")) {
   message.channel.send({
